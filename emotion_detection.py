@@ -7,5 +7,5 @@ def emotion_detector(text_to_analyze):
             "text": text_to_analyze
         }
     }
-    response = requests.post(url, json=input_json, headers=headers)
+    response = requests.post(website, json=input_json, headers=headers)
     return response.text
