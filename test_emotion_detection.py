@@ -9,7 +9,7 @@ def test_detector():
     }
     count = 0
     for statement, dominant_emotion in test_cases:
-        count++
+        count++;
         result = emotion_detector(statement)
         if result["dominant_emotion"] == dominant_emotion:
             print("Passed statement: " + count + "with dominant_emotion " + dominant_emotion)
