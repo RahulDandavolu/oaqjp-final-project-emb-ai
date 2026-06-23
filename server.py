@@ -16,4 +16,4 @@ def analyze():
     f"The dominant emotion is {response['dominant_emotion']}.")
     return formatted
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port = 5000)
+    application.run(host="0.0.0.0", port = 5000)
