@@ -8,8 +8,8 @@ def test_detector():
         "I am really afraid that this will happen":	"fear"
     }
     count = 0
-    for statement, dominant_emotion in test_cases:
-        count++;
+    for statement, dominant_emotion in test_cases.items():
+        count = count + 1
         result = emotion_detector(statement)
         if result["dominant_emotion"] == dominant_emotion:
             print("Passed statement: " + count + "with dominant_emotion " + dominant_emotion)
