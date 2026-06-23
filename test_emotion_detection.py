@@ -12,7 +12,7 @@ def test_detector():
         count = count + 1
         result = emotion_detector(statement)
         if result["dominant_emotion"] == dominant_emotion:
-            print("Passed statement: " + count + "with dominant_emotion " + dominant_emotion)
+            print("Passed statement: " + str(count) + "with dominant_emotion " + str(dominant_emotion))
         else:
-            print("Failed statement: " + count + "with dominant_emotion " + dominant_emotion)
+            print("Failed statement: " + str(count) + "with dominant_emotion " + str(dominant_emotion))
 test_detector()
