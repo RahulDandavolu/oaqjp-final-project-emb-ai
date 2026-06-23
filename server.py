@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request
 from EmotionDetection import emotion_detector
 application = Flask(__name__)
-@app.route("/")
+@application.route("/")
 def renderer():
     return render_template(index.html)
-@app.route("/emotionDetector")
+@application.route("/emotionDetector")
 def analyze():
     statement = request.args.get("textToAnalyze")
     formatted = (f"For the given statement, the system response is "
