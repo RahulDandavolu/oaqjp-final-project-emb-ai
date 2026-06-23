@@ -1,0 +1,6 @@
+python3 test_emotion_detection.py
+Passed statement: 1with dominant_emotion joy
+Passed statement: 2with dominant_emotion anger
+Passed statement: 3with dominant_emotion disgust
+Passed statement: 4with dominant_emotion sadness
+Passed statement: 5with dominant_emotion fear
