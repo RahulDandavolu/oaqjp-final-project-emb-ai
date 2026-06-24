@@ -8,7 +8,7 @@ def renderer():
 def analyze():
     statement = request.args.get("textToAnalyze")
     response = emotion_detector(statement)
-    if response['dominant_emotion'] == None:
+    if response['dominant_emotion'] is None:
         return "Invalid text! Please try again!"
     formatted = (f"For the given statement, the system response is "
     f"'anger': {response['anger']}, "
