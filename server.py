@@ -3,10 +3,11 @@ from EmotionDetection import emotion_detector
 application = Flask(__name__)
 @application.route("/")
 def renderer():
-    return render_template(index.html)
+    return render_template("index.html")
 @application.route("/emotionDetector")
 def analyze():
     statement = request.args.get("textToAnalyze")
+    response = emotion_detector(statement)
     formatted = (f"For the given statement, the system response is "
     f"'anger': {response['anger']}, "
     f"'disgust': {response['disgust']}, "
